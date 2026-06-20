@@ -1,352 +1,174 @@
-\# Bounty Safety Checklist for Beginners
+# Bounty Safety Checklist for Beginners
 
+## Purpose
 
+This checklist helps beginners evaluate GitHub bounty issues before spending
+time on them. It focuses on safety, scope control, payment uncertainty, and
+common scam patterns.
 
-\## Purpose
+This is not financial, investment, or legal advice, and it is not a guarantee
+that any bounty will be paid.
 
+## Before You Start
 
+- [ ] **Read the issue:** Confirm that the expected deliverable and acceptance
+  criteria are specific enough to test or review.
+- [ ] **Check for existing work:** Search open pull requests and recent issue
+  comments for duplicate attempts.
+- [ ] **Check repository activity:** Look for recent commits and maintainer
+  responses before investing significant time.
+- [ ] **Verify the bounty terms:** Confirm the amount, payout method,
+  eligibility rules, claim process, and who decides acceptance.
+- [ ] **Protect secrets:** The work must not require seed phrases, private keys,
+  API keys, cookies, production credentials, or client-private data.
+- [ ] **Keep your financial floor:** Do not pay a fee, buy a token, or deposit
+  money to unlock a bounty.
+- [ ] **Keep a public trail:** Prefer public issue and pull request discussion
+  for scope, review, and submission evidence.
+- [ ] **Timebox the work:** Prefer a change that is small enough to complete,
+  test, and explain without a large rewrite.
 
-This checklist helps beginners evaluate GitHub bounty issues before spending time on them. It focuses on safety, scope control, payment uncertainty, and common scam patterns.
+An unchecked item does not always mean the task is fraudulent. It means there
+is uncertainty to resolve before starting.
 
+## Common Scam or High-Risk Patterns
 
+### "Pay first to unlock the bounty"
 
-This is not financial advice, investment advice, legal advice, or a guarantee that any bounty will be paid.
+A requester asks for a registration fee, gas fee, verification fee, token
+purchase, or deposit before you can contribute.
 
+**Safer response:** Do not pay. Ask for the full process to be documented on
+the public issue or bounty platform. If payment is still required, skip the
+task.
 
+### "Use this seed phrase or private key"
 
-\## Quick Evaluation Checklist
+A task asks you to paste, generate, or submit wallet recovery words, private
+keys, browser cookies, cloud credentials, or production secrets.
 
+**Safer response:** Refuse the task. Legitimate development should use test
+credentials, mock data, or a documented local environment. Never post a real
+secret in an issue, pull request, screenshot, log, or commit.
 
+### "Guaranteed payout if you do this quickly"
 
-Before working on a bounty, check the following items:
+A requester promises a guaranteed reward without clear acceptance criteria,
+maintainer approval, escrow, or a public payout process.
 
+**Safer response:** Treat the payout as unconfirmed until the rules and
+decision-maker are visible. A correct contribution can still lose to another
+submission or fail an eligibility rule.
 
+### "Large project, tiny bounty, unclear scope"
 
-| Area                  | What to check                                                                                         | Safer action                                                        |
+The issue asks for a full product, large refactor, production deployment, or
+complex integration while leaving the deliverables or bounty unclear.
 
-| --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+**Safer response:** Ask the maintainer to define a smaller acceptance target.
+Skip the task if the scope remains open-ended.
 
-| Issue clarity         | The issue has clear requirements, acceptance criteria, and expected deliverables.                     | Avoid vague issues unless the maintainer clarifies the scope.       |
+### "Duplicate pull request race"
 
-| Existing work         | Search open pull requests and comments for duplicate attempts.                                        | Do not start if several PRs already solve the same issue.           |
+Several pull requests already attempt the same issue, or another contributor
+is assigned and actively responding.
 
-| Repository activity   | Check recent commits, maintainer responses, and issue activity.                                       | Prefer active repositories with recent maintainer feedback.         |
+**Safer response:** Read the existing attempts before writing code. Continue
+only when a maintainer identifies a missing case or invites another approach.
 
-| Payment terms         | Check whether the bounty amount, payout method, and eligibility rules are written clearly.            | Treat unclear payout terms as uncertain.                            |
+## Beginner-Friendly Bounty Workflow
 
-| Secrets and keys      | The task should not require private keys, seed phrases, API keys, cookies, or production credentials. | Refuse tasks asking for secrets or private account access.          |
+### Step 1: Read the Issue and Rules
 
-| Upfront payment       | The requester should not ask you to pay a fee, buy a token, or deposit money before working.          | Treat upfront payment requests as a scam signal.                    |
+Write down:
 
-| Off-platform pressure | Be careful if someone pushes you to Telegram, Discord, WhatsApp, or email for payment details.        | Keep technical discussion and deliverables on GitHub when possible. |
+- the exact behavior or document that must change,
+- the files likely involved,
+- the acceptance criteria,
+- the bounty amount and payment method,
+- any claim, assignment, identity, or regional requirements,
+- who has authority to accept the work.
 
-| Scope size            | The work should be small enough to complete and test.                                                 | Timebox beginner bounties and avoid large rewrites.                 |
+If the issue and the bounty platform disagree, ask for clarification in public
+before starting.
 
+### Step 2: Check for Duplicate Work
 
-
-\## Common Scam or High-Risk Patterns
-
-
-
-\### 1. “Pay first to unlock the bounty ?
-
-
-
-A requester says the bounty is real but asks you to pay a registration fee, gas fee, verification fee, or token purchase first.
-
-
-
-Safer response: do not pay. Legitimate open-source contribution work should not require contributors to send money before contributing.
-
-
-
-\### 2. “Use this seed phrase or private key ?
-
-
-
-A task asks you to use, generate, paste, or submit wallet seed phrases, private keys, browser cookies, or cloud credentials.
-
-
-
-Safer response: refuse the task. Real development work should use test credentials, mock data, or documented local setup.
-
-
-
-\### 3. “Guaranteed payout if you do this quickly ?
-
-
-
-A requester promises a guaranteed reward without clear acceptance criteria, escrow, maintainer approval, or public issue history.
-
-
-
-Safer response: treat the payout as uncertain until the rules are visible and verifiable.
-
-
-
-\### 4. “Large project, tiny bounty, unclear scope ?
-
-
-
-The issue asks for a full product, large refactor, production deployment, or complex integration, but gives only a small or unclear bounty.
-
-
-
-Safer response: ask for a smaller scoped task or skip it.
-
-
-
-\### 5. “Duplicate PR race ?
-
-
-
-The issue is simple, but many pull requests already exist.
-
-
-
-Safer response: check existing PRs first. If multiple PRs already solve it, the chance of acceptance is low.
-
-
-
-\## Beginner-Friendly Bounty Workflow
-
-
-
-\### Step 1: Read the issue carefully
-
-
-
-Check:
-
-
-
-\* What exactly needs to change
-
-\* Which files are likely involved
-
-\* Whether acceptance criteria are written
-
-\* Whether the issue references another issue, bounty page, or sponsor instruction
-
-\* Whether payout rules are public
-
-
-
-\### Step 2: Check for duplicate work
-
-
-
-Use GitHub search or GitHub CLI:
-
-
+Read linked pull requests and recent comments. You can also search with the
+GitHub CLI:
 
 ```bash
-
-gh pr list --repo OWNER/REPO --search "ISSUE\_NUMBER"
-
+gh pr list --repo OWNER/REPO --state all --search "ISSUE_NUMBER"
 ```
 
-
-
-Also read recent comments. If someone already posted an attempt, compare whether the issue is still open and whether maintainers asked for revisions.
-
-
-
-\### Step 3: Estimate the work
-
-
-
-Prefer tasks that are:
-
-
-
-\* Documentation improvements
-
-\* Small bug fixes
-
-\* Test additions
-
-\* Simple frontend changes
-
-\* Configuration fixes
-
-\* Clear template updates
-
-
-
-Avoid tasks that require:
-
-
-
-\* Production secrets
-
-\* Paid services
-
-\* Private customer data
-
-\* Large architecture changes
-
-\* Unclear external API access
-
-\* Financial or token promotion claims
-
-
-
-\### Step 4: Make a small change
-
-
-
-Keep the pull request focused. Do not rewrite unrelated files. Do not add large dependencies unless the issue requires them.
-
-
-
-\### Step 5: Submit with evidence
-
-
-
-A good bounty submission should include:
-
-
-
-\* What changed
-
-\* Why it helps
-
-\* How it was tested
-
-\* Screenshots or command output when relevant
-
-\* The related issue number
-
-\* Remaining caveats
-
-
-
-\## Notes on Bounty Platforms
-
-
-
-Different platforms handle payment, review, and eligibility differently. A platform being reputable does not guarantee that every issue will pay out.
-
-
-
-Useful places to review before working:
-
-
-
-\* GitHub issue and pull request history
-
-\* The repository's README and CONTRIBUTING files
-
-\* The bounty platform's current terms and payout rules
-
-\* Maintainer comments on the specific issue
-
-
-
-Examples of platforms or ecosystems contributors may encounter include GitHub Issues, Algora, Gitcoin, OnlyDust, and Code4rena. Always verify the current rules directly on the relevant platform before relying on a bounty.
-
-
-
-\## Submission Template
-
-
-
-```markdown
-
-\## Summary
-
-
-
-Briefly describe what you changed and which issue it addresses.
-
-
-
-\## Changes
-
-
-
-\- Added or updated:
-
-\- Clarified:
-
-\- Removed or avoided:
-
-
-
-\## Testing
-
-
-
-\- Ran:
-
-\- Checked:
-
-\- Not run, because:
-
-
-
-\## Safety / Secrets Check
-
-
-
-\- \[ ] No seed phrases
-
-\- \[ ] No private keys
-
-\- \[ ] No API keys
-
-\- \[ ] No client-private data
-
-\- \[ ] No investment promises
-
-\- \[ ] No production credentials
-
-
-
-\## Caveats
-
-
-
-Explain what could still be wrong, incomplete, or dependent on maintainer review.
-
-
-
-\## Related Issue
-
-
-
-Closes #ISSUE\_NUMBER
-
-```
-
-
-
-\## What Could Still Be Wrong
-
-
-
-\* Bounty rules can change after this checklist is written.
-
-\* A maintainer may choose another PR even if your work is correct.
-
-\* A bounty may require KYC, regional eligibility, or platform-specific payout steps.
-
-\* Public issue descriptions may be incomplete.
-
-\* This checklist reduces risk but cannot remove all risk.
+Search by the issue title and relevant function name too; not every pull
+request includes the issue number.
+
+### Step 3: Estimate the Work
+
+Beginner-friendly tasks usually have a narrow review surface, such as:
+
+- documentation improvements,
+- small bug fixes with a reproducible case,
+- tests for existing behavior,
+- focused configuration fixes,
+- simple user-interface corrections.
+
+Avoid tasks that depend on production secrets, paid services, private customer
+data, complex deployment, large architecture changes, or unclear external API
+access.
+
+### Step 4: Make the Smallest Complete Change
+
+Keep the pull request focused on the acceptance criteria. Follow the existing
+project style, add a regression test for a bug when practical, and do not
+rewrite unrelated files or upgrade dependencies without a clear need.
+
+### Step 5: Submit With Receipts
+
+Use the repository's
+[bounty submission template](../templates/bounty-submission.md). Include:
+
+- the chapter or issue addressed,
+- what changed and why it helps,
+- the exact checks or tests run,
+- screenshots or links when relevant,
+- sources for factual claims,
+- remaining limitations or uncertainty,
+- a completed secrets check.
+
+Only claim checks you actually ran. If something could not be tested, state
+the reason and the alternative review performed.
+
+## Platform Notes
+
+A recognizable bounty platform can document a workflow, but it does not make
+every linked issue active, eligible, or guaranteed to pay. Before relying on a
+listing:
+
+- read the platform's current contributor and payout rules,
+- confirm that the specific bounty is still active,
+- check whether claiming or maintainer assignment is required,
+- verify payout method and eligibility before doing substantial work,
+- keep links or screenshots of the rules that applied when you started.
+
+## What Could Still Be Wrong
+
+- Bounty rules, links, and eligibility requirements can change after this
+  checklist is written.
+- A maintainer may choose another pull request even if your work is correct.
+- A bounty may require identity verification, regional eligibility, tax
+  information, or platform-specific payout steps.
+- Public issue descriptions may omit constraints that appear during review.
+- A repository or platform can be legitimate while a person impersonating it
+  is not.
+- This checklist reduces avoidable risk but cannot remove all risk or guarantee
+  payment.
 
 ## References and Receipts
 
-These references are starting points for checking bounty rules, platform terms, and submission expectations. Contributors should always verify the current rules on the relevant platform before relying on a bounty.
-
-* GitHub Docs — Issues and pull requests: https://docs.github.com/en/issues
-* GitHub Docs — Keeping your account and data secure: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure
-* Algora Docs — Bounties and contributor rewards: https://algora.io/docs
-* Algora Bounties — GitHub bounty workflow examples: https://algora.io/bounties/
-* Gitcoin — Bounties as a task-based funding mechanism: https://gitcoin.co/mechanisms/bounties
-* Code4rena Docs — Submission guidelines: https://docs.code4rena.com/competitions/submission-guidelines
-* OnlyDust — Historical/open-source funding context; verify current availability before relying on it: https://www.onlydust.com/
-
-
-
+- [GitHub Docs: About issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+- [GitHub Docs: Pull requests](https://docs.github.com/en/pull-requests)
+- [GitHub Docs: Keeping your account and data secure](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure)
+- [Algora source repository](https://github.com/algora-io/algora)
+- [Algora bounties](https://algora.io/bounties)
