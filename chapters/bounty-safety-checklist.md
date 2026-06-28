@@ -118,13 +118,35 @@ Avoid tasks that depend on production secrets, paid services, private customer
 data, complex deployment, large architecture changes, or unclear external API
 access.
 
-### Step 4: Make the Smallest Complete Change
+### Step 4: Decide Whether to Continue
+
+Before opening an editor, make a simple go, clarify, or skip decision.
+
+Continue when:
+
+- the issue is open and not already assigned to an active contributor,
+- the bounty terms and review process are visible enough to understand,
+- the expected change can be tested or reviewed in public,
+- the work is small enough to finish without a broad rewrite,
+- there is no request for secrets, private data, upfront payment, or token
+  promotion.
+
+Ask for clarification when the goal is useful but one important fact is
+missing, such as the expected behavior, the claim process, the review owner,
+or the required evidence.
+
+Skip the bounty when the task is closed, already solved by a merged pull
+request, claimed by an active contributor, dependent on private infrastructure,
+or too vague to verify. A skipped task is not wasted effort if it saves hours
+of unrewarded work.
+
+### Step 5: Make the Smallest Complete Change
 
 Keep the pull request focused on the acceptance criteria. Follow the existing
 project style, add a regression test for a bug when practical, and do not
 rewrite unrelated files or upgrade dependencies without a clear need.
 
-### Step 5: Submit With Receipts
+### Step 6: Submit With Receipts
 
 Use the repository's
 [bounty submission template](../templates/bounty-submission.md). Include:
